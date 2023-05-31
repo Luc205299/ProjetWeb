@@ -124,6 +124,7 @@ function SuppPanier() {
     alert("Panier supprimé");
     panier = [];
     localStorage.setItem("panier", JSON.stringify(panier));
+    window.location.reload();
 }
 
 function ajouterAuPanier(produit) {
@@ -132,16 +133,13 @@ function ajouterAuPanier(produit) {
     if (panier) {
         // Si le panier existe, le convertir en objet JavaScript
         panier = JSON.parse(panier);
-        console.log(produit+"hh");
     } else {
         // Si le panier n'existe pas, initialiser un tableau vide
         panier = [];
         console.log(produit+"ff");
     }
     // Ajouter le produit au panier
-    console.log(produit+"gg");
     for(var i = 0; i < panier.length; i++){
-        console.log(produit+"pp");
         if(panier[i].id == produit.id){
             panier[i].quantite++;
             localStorage.setItem("panier", JSON.stringify(panier));
@@ -151,7 +149,7 @@ function ajouterAuPanier(produit) {
             
                 
     }
-    console.log(produit+"kk");
+
     panier.push(produit);
                 localStorage.setItem("panier", JSON.stringify(panier));
                 alert("Produit ajouté au panier");
