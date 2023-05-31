@@ -78,25 +78,33 @@ body {
 
 
   /* Slide*/
-  #slideContainer {
+  #slideContainer,
+  #slideContainer1,
+  #slideContainer2 {
     width: 80%;
     margin: 0 auto; /* Center the container */
 }
   
-  .slide {
+  .slide, 
+  .slide1,
+  .slide2 {
     display: flex;
     overflow: hidden;
   }
   
-  .slide img {
+  .slide img, 
+  .slide1 img,
+  .slide2 img {
     width: 100%;
     height: auto;
   }
+
+  
   
   .prev,
   .next {
     position: absolute;
-    top: 50%;
+    /* top: 50%; */
     transform: translateY(-50%);
     font-size: 24px;
     cursor: pointer;

@@ -25,9 +25,16 @@
         <p> Elle est très utilisée par les joueurs de Rocket League </p>
         <p>Voici quelques design : </p>    </div>
 
-
+        <div id = 'slideContainer'>
+          <div  class = 'slide'>
+              <img  src="../img/car/octane1/20230530223202_1.jpg" alt="Octane" >
+              <img  src="../img/car/octane1/20230530223220_1.jpg" alt="Octane" >
+              <img  src="../img/car/octane1/20230530223225_1.jpg" alt="Octane" >
+              <img  src="../img/car/octane1/20230530223231_1.png" alt="Octane" >
+          </div>
+          <a class="prev" onclick="changeSlide(-1)">&#10092;</a>
+          <a class="next" onclick="changeSlide(1)">&#10091;</a>
         <section id="octane1">
-        <img class="Octane" src="../img/car/20230530223231_1.png" alt="Octane" >
         <table>
           <thead>
             <tr>
@@ -56,8 +63,20 @@
         </section>
 
 
+        <div id = 'slideContainer1'>
+          <div  class = 'slide1'>
+              <img  src="../img/car/octane2/20230530223755_1.jpg" alt="Octane" >
+              <img  src="../img/car/octane2/20230530223759_1.jpg" alt="Octane" >
+              <img  src="../img/car/octane2/20230530223813_1.jpg" alt="Octane" >
+              <img  src="../img/car/octane2/20230530223810_1.jpg" alt="Octane" >
+          </div>
+          <a class="prev" onclick="changeSlide1(-1)">&#10094;</a>
+          <a class="next" onclick="changeSlide1(1)">&#10095;</a>
         <section id="octane2">
-          <img class="Octane" src="../img/car/20230530223231_1.png" alt="Octane" >
+          
+        
+        </div>
+          <!-- <img class="Octane" src="../img/car/20230530223755_1.jpg" alt="Octane" > -->
           <table>
             <thead>
               <tr>
@@ -85,9 +104,17 @@
           </table>
           </section>
 
-
+          <div id = 'slideContainer2'>
+            <div  class = 'slide2'>
+                <img  src="../img/car/octane3/temp.webp" alt="Octane" >
+                <img  src="../img/car/octane3/temp.webp" alt="Octane" >
+                <img  src="../img/car/octane3/temp.webp" alt="Octane" >
+                <img  src="../img/car/octane3/temp.webp" alt="Octane" >
+            </div>
+            <a class="prev" onclick="changeSlide2(-1)">&#10094;</a>
+            <a class="next" onclick="changeSlide2(1)">&#10095;</a>
+          
           <section id="octane3">
-            <img class="Octane" src="../img/car/20230530223231_1.png" alt="Octane" >
             <table>
               <thead>
                 <tr>
@@ -114,13 +141,11 @@
               </tbody>
             </table>
             </section>
-            <div>
-              <button onclick = "SuppPanier()">supprimer panier </button>
-            </div>
 </body>
 <footer>
   <div class="footer">
     <script src="../scripts/objects.js"></script>
+    <script src="../scripts/main.js"></script>
     <p>© 2021 Octane, Inc. All rights reserved.</p>
   </div>
 </html>
