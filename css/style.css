@@ -84,6 +84,10 @@ body {
     width: 80%;
     margin: 0 auto; /* Center the container */
 }
+#slideContainera{
+    width: 50%;
+    margin: 0 auto; /* Center the container */
+}
   
   .slide, 
   .slide1,
@@ -95,8 +99,9 @@ body {
   .slide img, 
   .slide1 img,
   .slide2 img {
-    width: 100%;
+    width: 90%;
     height: auto;
+
   }
 
   
