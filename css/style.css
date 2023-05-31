@@ -43,6 +43,7 @@ body {
     margin: 0px -50px;
   }
   
+  
   .navbar ul {
     list-style: none;
     margin: 0;
@@ -65,4 +66,42 @@ body {
   
   .navbar a:hover {
     color: #666;
+  }
+
+
+  /* Slideshow */
+  .slideContainer {
+    position: relative;
+    width: 100%;
+  }
+  
+  .slide {
+    display: flex;
+    overflow: hidden;
+  }
+  
+  .slide img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .prev,
+  .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 24px;
+    cursor: pointer;
+    padding: 16px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+  }
+  
+  .prev {
+    left: 0;
+  }
+  
+  .next {
+    right: 0;
   }
