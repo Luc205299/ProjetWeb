@@ -47,21 +47,21 @@ var produit7 = {
     quantite: 1
 };
 
-var produit8 = {
+var octane = {
     id: 8,
     nom: "Octane",
     prix: 500,
     quantite: 1
 };
 
-var produit9 = {
+var fennec = {
     id: 9,
     nom: "Fennec",
     prix: 500,
     quantite: 1
 };
 
-var produit10 = {
+var dominus = {
     id: 10,
     nom: "Dominus",
     prix: 500,
@@ -103,17 +103,56 @@ var produit14 = {
 // var btnAjouterPanier = document.getElementsByClassName("btnAjouterPanier");
 // btnAjouterPanier.addEventListener("click", ajouterAuPanier);
  
+// function ajouterAuPanier(produit) {
+//     var panier = localStorage.getItem("panier");
+//     if (panier) {
+//         // Si le panier existe, le convertir en objet JavaScript
+//         panier = JSON.parse(panier);
+//     } else {
+//         // Si le panier n'existe pas, initialiser un tableau vide
+//         panier = [];
+//     }
+//     // Ajouter le produit au panier
+//     panier.push(produit);
+//     localStorage.setItem("panier", JSON.stringify(panier));
+//     alert("Produit ajouté au panier");
+//     }
+    
+
+function SuppPanier() {
+    localStorage.removeItem("panier");
+    alert("Panier supprimé");
+    panier = [];
+    localStorage.setItem("panier", JSON.stringify(panier));
+}
+
 function ajouterAuPanier(produit) {
+    console.log(produit);
     var panier = localStorage.getItem("panier");
     if (panier) {
         // Si le panier existe, le convertir en objet JavaScript
         panier = JSON.parse(panier);
+        console.log(produit+"hh");
     } else {
         // Si le panier n'existe pas, initialiser un tableau vide
         panier = [];
+        console.log(produit+"ff");
     }
     // Ajouter le produit au panier
+    console.log(produit+"gg");
+    for(var i = 0; i < panier.length; i++){
+        console.log(produit+"pp");
+        if(panier[i].id == produit.id){
+            panier[i].quantite++;
+            localStorage.setItem("panier", JSON.stringify(panier));
+            alert("Produit ajouté au panier");
+            return;
+        }
+            
+                
+    }
+    console.log(produit+"kk");
     panier.push(produit);
-    localStorage.setItem("panier", JSON.stringify(panier));
-    alert("Produit ajouté au panier");
+                localStorage.setItem("panier", JSON.stringify(panier));
+                alert("Produit ajouté au panier");
 }

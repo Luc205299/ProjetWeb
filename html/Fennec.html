@@ -6,21 +6,121 @@
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <header>
-    <div > <img id="logo" src="../img/logo.png" alt="logo"> </div>
-    <div>
-      <ul id="menu">
-        <li><a href="../html/acceuil.html">Accueil</a></li>
-        <li><a href="../html/Octane.html">Octane</a></li>
-        <li><a href="../html/Fennec.html"> Fennec</a></li>
-        <li><a href="../html/Dominus.html"> Dominus</a></li>
-        <li><a href="../html/panier.html"> Panier</a></li>
-        <li><a href="../html/aPropos.html"> A Propos</a></li>
-      </ul>
-    </div>		  
+  <div > 
+    <ul class="navbar">
+    <li><img id="logo" src="../img/logo.png" alt="logo"> </li>
+    <li><a href="../html/acceuil.html">Accueil</a></li>
+    <li><a href="../html/Octane.html">Octane</a></li>
+    <li><a href="../html/Fennec.html"> Fennec</a></li>
+    <li><a href="../html/Dominus.html"> Dominus</a></li>
+    <li><a href="../html/panier.html"> Panier</a></li>
+    <li><a href="../html/aPropos.html"> A Propos</a></li>
+  </ul>
+</div>	  
 </header>
 <body>
-    <div>
-        <h1> Fennec </h1>
-    </div>
+  <div class="container">
+    <h1> Fennec </h1>
+    <p> Fennec est une voiture de type "hitbox" </p>
+    <p> Elle est très utilisée par les joueurs de Rocket League </p>
+    <p>Voici quelques design : </p>    </div>
+
+
+    <section id="Octane1">
+    <img class="Octane" src="../img/car/Fennec.jpg" alt="Fennec" >
+    <table>
+      <thead>
+        <tr>
+          <th>Nom</th>
+          <th>Prix</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Inception</td>
+          <td>500 <img src="../img/credits.png" alt="coin" width="20px" height="20px"></td>
+          <td><button onclick="ajouterAuPanier(produit2)">Ajouter au panier</button></td>
+        </tr>
+        <tr>
+          <td>Begins</td>
+          <td>1000 <img src="../img/credits.png" alt="coin" width="20px" height="20px"></td>
+          <td><button onclick="ajouterAuPanier(produit6)">Ajouter au panier</button></td>
+        </tr>
+        <tr>
+          <td>Fennec</td>
+          <td>500 <img src="../img/credits.png" alt="coin" width="20px" height="20px"></td>
+          <td><button onclick="ajouterAuPanier(fennec)">Ajouter au panier</button></td>
+        </tr>
+      </tbody>
+    </table>
+    </section>
+
+
+    <section id="octane2">
+      <img class="Octane" src="../img/car/Fennec.jpg" alt="Fennec" >
+      <table>
+        <thead>
+          <tr>
+            <th>Nom</th>
+            <th>Prix</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Donnée 1</td>
+            <td>Donnée 2</td>
+            <td><button>Ajouter au panier</button></td>
+          </tr>
+          <tr>
+            <td>Donnée 5</td>
+            <td>Donnée 6</td>
+            <td><button>Ajouter au panier</button></td>
+          </tr>
+          <tr>
+            <td>Fennec</td>
+            <td>500 <img src="../img/credits.png" alt="coin" width="20px" height="20px"></td>
+            <td><button onclick="ajouterAuPanier(fennec)">Ajouter au panier</button></td>
+          </tr>
+        </tbody>
+      </table>
+      </section>
+
+
+      <section id="octane3">
+        <img class="Octane" src="../img/car/Fennec.jpg" alt="Fennec" >
+        <table>
+          <thead>
+            <tr>
+              <th>Nom</th>
+              <th>Prix</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Donnée 1</td>
+              <td>Donnée 2</td>
+              <td><button>Ajouter au panier</button></td>
+            </tr>
+            <tr>
+              <td>Donnée 5</td>
+              <td>Donnée 6</td>
+              <td><button>Ajouter au panier</button></td>
+            </tr>
+            <tr>
+              <td>Fennec</td>
+              <td>500 <img src="../img/credits.png" alt="coin" width="20px" height="20px"></td>
+              <td><button onclick="ajouterAuPanier(fennec)">Ajouter au panier</button></td>
+            </tr>
+          </tbody>
+        </table>
+        </section>
+        <div>
+          <button onclick = "SuppPanier()">supprimer panier </button>
+        </div>
 </body>
+<footer>
+<div class="footer">
+<script src="../scripts/objects.js"></script>
+<p>© 2021 Octane, Inc. All rights reserved.</p>
+</div>
 </html>
