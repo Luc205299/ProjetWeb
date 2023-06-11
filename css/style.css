@@ -85,7 +85,7 @@ body {
     margin: 0 auto; /* Center the container */
 }
 #slideContainera{
-    width: 50%;
+    width: 80%;
     margin: 0 auto; /* Center the container */
 }
   
@@ -135,6 +135,7 @@ body {
     padding:40px 0;
     background-color:#ffffff;
     color:#4b4c4d;
+    width: 100%;
   }
   
   .footer-basic ul {

@@ -1,100 +1,147 @@
-var produit0 = {
+var produit1 = {
     id: 1,
-    nom: "Interstellar",
-    prix: 2000,
+    nom: "Black Octane",
+    prix: 1500,
     quantite: 1
   };
 
 var produit2 = {
     id: 2,
-    nom: "Inception",
-    prix: 500,
+    nom: "Chantico",
+    prix: 1100,
     quantite: 1
 };
 
 var produit3 = {
     id: 3,
-    nom: "Dunkirk",
-    prix: 200,
+    nom: "Jacana",
+    prix: 2000,
     quantite: 1
 };
 
 var produit4 = {
     id: 4,
-    nom: "The Dark Knight",
-    prix: 1000,
+    nom: "Viled",
+    prix: 2000,
     quantite: 1
 };
 
 var produit5 = {
     id: 5,
-    nom: "The Dark Knight ",
-    prix: 1000,
+    nom: "Demonio",
+    prix: 2000,
     quantite: 1
 };
 
 var produit6 = {
     id: 6,
-    nom: "Begins",
-    prix: 1000,
+    nom: "White Octane",
+    prix: 5000,
     quantite: 1
 };
 
 var produit7 = {
     id: 7,
-    nom: "The Prestige",
-    prix: 800,
+    nom: "Lunation",
+    prix: 2000,
     quantite: 1
 };
 
-var octane = {
+var produit8 = {
     id: 8,
-    nom: "Octane",
-    prix: 500,
+    nom: "Glitterati",
+    prix: 2000,
     quantite: 1
 };
 
-var fennec = {
+var produit9 = {
     id: 9,
-    nom: "Fennec",
-    prix: 500,
+    nom: "Black Fennec",
+    prix: 1500,
     quantite: 1
 };
 
-var dominus = {
+var produit10 = {
     id: 10,
-    nom: "Dominus",
-    prix: 500,
+    nom: "Huntress",
+    prix: 2200,
     quantite: 1
 };
 
 var produit11 = {
     id: 11,
-    nom: "Bat",
-    prix: 5000,
+    nom: "Founder",
+    prix: 2000,
     quantite: 1
 };
 
 var produit12 = {
     id: 12,
-    nom: "Maverick",
-    prix: 500,
+    nom: "White Fennec",
+    prix: 3500,
     quantite: 1
 };
 
-//on arrete avec les voitures copilot
-
 var produit13 = {
     id: 13,
-    nom: "Fire God",
-    prix: 700,
+    nom: "Stride Tide",
+    prix: 2500,
     quantite: 1
 }; 
 
 var produit14 = {
     id: 14,
-    nom: "Mainframe",
+    nom: "Dieci",
     prix: 700,
+    quantite: 1
+};
+
+var produit15 = {
+    id: 15,
+    nom: "Ombre",
+    prix: 1200,
+    quantite: 1
+};
+
+var produit16 = {
+    id: 16,
+    nom: "Ecto-1 BK",
+    prix: 1200,
+    quantite: 1
+};
+
+var produit17 = {
+    id: 17,
+    nom: "Black Dominus",
+    prix: 1500,
+    quantite: 1
+};
+
+var produit18 = {
+    id: 18,
+    nom: "CRL eastern",
+    prix: 2000,
+    quantite: 1
+};
+
+var produit19 = {
+    id: 19,
+    nom: "Astro-CSK",
+    prix: 1300,
+    quantite: 1
+};
+
+var produit20 = {
+    id: 20,
+    nom: "White Dominus",
+    prix: 3500,
+    quantite: 1
+};
+
+var produit21 = {
+    id: 21,
+    nom: "K2",
+    prix: 2500,
     quantite: 1
 };
 
@@ -102,7 +149,7 @@ var produit14 = {
 
 // var btnAjouterPanier = document.getElementsByClassName("btnAjouterPanier");
 // btnAjouterPanier.addEventListener("click", ajouterAuPanier);
- 
+//  
 // function ajouterAuPanier(produit) {
 //     var panier = localStorage.getItem("panier");
 //     if (panier) {
